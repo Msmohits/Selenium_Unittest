@@ -11,8 +11,8 @@ from email.mime.text import MIMEText
 from email.mime.base import MIMEBase
 from email import encoders
 import HtmlTestRunner
-fromaddr = "mohit.sharma144.ms@gmail.com"
-toaddr = "msmohitsharma144.ms@gmail.com"
+fromaddr = "mohit********"
+toaddr = "msmohit*******"
 
 
 def index(var):
@@ -31,7 +31,7 @@ def index(var):
     msg.attach(p)
     s = smtplib.SMTP('smtp.gmail.com', 587)
     s.starttls()
-    s.login(fromaddr, "Roadcast@123")
+    s.login(fromaddr, "Password")
     text = msg.as_string()
     s.sendmail(fromaddr, toaddr, text)
     s.quit()
@@ -41,13 +41,13 @@ class PythonOrgSearch(unittest.TestCase):
     def setUp(self):
 
         self.driver = webdriver.Chrome(executable_path="D:/Downloads/chromedriver_win32/chromedriver.exe")
-        self.driver.get("https://bolt.roadcast.co.in/")
+        self.driver.get("URL*****")
         self.driver.maximize_window()
 
     def test_search0_home_botton(self):
         try:
-            self.driver.find_element(By.ID,"mat-input-0").send_keys("9654185000")
-            self.driver.find_element(By.ID,"mat-input-1").send_keys("Rc123456")
+            self.driver.find_element(By.ID,"mat-input-0").send_keys("Website Username")
+            self.driver.find_element(By.ID,"mat-input-1").send_keys("Website Password")
             self.driver.find_element(By.XPATH,"//button[@class='mat-focus-indicator mat-raised-button mat-button-base mat-primary']").click()
             time.sleep(5)
 
@@ -86,8 +86,8 @@ class PythonOrgSearch(unittest.TestCase):
 
     def test_search1_dashboard_button(self):
         try:
-            self.driver.find_element(By.ID, "mat-input-0").send_keys("9654185000")
-            self.driver.find_element(By.ID, "mat-input-1").send_keys("Rc123456")
+            self.driver.find_element(By.ID, "mat-input-0").send_keys("******")
+            self.driver.find_element(By.ID, "mat-input-1").send_keys("*******")
             self.driver.find_element(By.XPATH,"//button[@class='mat-focus-indicator mat-raised-button mat-button-base mat-primary']").click()
             time.sleep(5)
             print("login_success :-", self.driver.current_url)
@@ -134,8 +134,8 @@ class PythonOrgSearch(unittest.TestCase):
 
     def test_search3_reports_button(self):
         try:
-            self.driver.find_element(By.ID, "mat-input-0").send_keys("9654185000")
-            self.driver.find_element(By.ID, "mat-input-1").send_keys("Rc123456")
+            self.driver.find_element(By.ID, "mat-input-0").send_keys("*******")
+            self.driver.find_element(By.ID, "mat-input-1").send_keys("*******")
             self.driver.find_element(By.XPATH,"//button[@class='mat-focus-indicator mat-raised-button mat-button-base mat-primary']").click()
             time.sleep(5)
             print("login_success :-", self.driver.current_url)
@@ -464,8 +464,8 @@ class PythonOrgSearch(unittest.TestCase):
 
     def test_search4_streaming_button(self):
         try:
-            self.driver.find_element(By.ID, "mat-input-0").send_keys("9654185000")
-            self.driver.find_element(By.ID, "mat-input-1").send_keys("Rc123456")
+            self.driver.find_element(By.ID, "mat-input-0").send_keys("*******")
+            self.driver.find_element(By.ID, "mat-input-1").send_keys("*******")
             self.driver.find_element(By.XPATH,"//button[@class='mat-focus-indicator mat-raised-button mat-button-base mat-primary']").click()
             time.sleep(5)
             print("login_success :-", self.driver.current_url)
@@ -492,8 +492,8 @@ class PythonOrgSearch(unittest.TestCase):
 
     def test_search5_setting_button(self):
         try:
-            self.driver.find_element(By.ID, "mat-input-0").send_keys("9654185000")
-            self.driver.find_element(By.ID, "mat-input-1").send_keys("Rc123456")
+            self.driver.find_element(By.ID, "mat-input-0").send_keys("*******")
+            self.driver.find_element(By.ID, "mat-input-1").send_keys("*******")
             self.driver.find_element(By.XPATH,"//button[@class='mat-focus-indicator mat-raised-button mat-button-base mat-primary']").click()
             time.sleep(5)
             print("login_success :-", self.driver.current_url)
@@ -572,8 +572,8 @@ class PythonOrgSearch(unittest.TestCase):
 
     def test_search6_admin_button(self):
         try:
-            self.driver.find_element(By.ID, "mat-input-0").send_keys("9654185000")
-            self.driver.find_element(By.ID, "mat-input-1").send_keys("Rc123456")
+            self.driver.find_element(By.ID, "mat-input-0").send_keys("*******")
+            self.driver.find_element(By.ID, "mat-input-1").send_keys("*******")
             self.driver.find_element(By.XPATH,"//button[@class='mat-focus-indicator mat-raised-button mat-button-base mat-primary']").click()
             time.sleep(5)
             print("login_success :-", self.driver.current_url)
@@ -653,8 +653,8 @@ class PythonOrgSearch(unittest.TestCase):
 
     def test_search7_logout(self):
         try:
-            self.driver.find_element(By.ID, "mat-input-0").send_keys("9654185000")
-            self.driver.find_element(By.ID, "mat-input-1").send_keys("Rc123456")
+            self.driver.find_element(By.ID, "mat-input-0").send_keys("*******")
+            self.driver.find_element(By.ID, "mat-input-1").send_keys("*******")
             self.driver.find_element(By.XPATH,"//button[@class='mat-focus-indicator mat-raised-button mat-button-base mat-primary']").click()
             time.sleep(5)
             print("login_success :-", self.driver.current_url)
